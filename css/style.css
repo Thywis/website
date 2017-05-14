@@ -420,7 +420,16 @@ a.button.accent:hover {
 	max-width: 70%;
 	margin-bottom: -100%;
 	margin-top: 20px;
+	transition: opacity .5s ease-in-out;
 }
+
+.feat .feat-image:not(.active) {
+	opacity: 0;
+}
+.feat .feat-image.active {
+	opacity: 1;
+}
+
 
 /* Responsive */
 @media (min-width: 768px) { 

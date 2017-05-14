@@ -94,6 +94,15 @@ function initializeBold() {
 		'data': $(this).parents("form").serialize()});return false;});
 	});
 
+// feature image
+	setInterval(function () {
+		var activeImage = $('.feat-image.active')[0]
+		var images = $('.feat-image').toArray()
+
+		$(activeImage).removeClass('active')
+		$(images[(images.indexOf(activeImage) + 1) % images.length]).addClass('active')
+	}, 1500);
+
 };
 /* END ------------------------------------------------------- */
 
@@ -122,3 +131,5 @@ $(window).load(function(){
     
 });
 /* END ------------------------------------------------------- */
+
+
