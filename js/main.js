@@ -33,8 +33,8 @@ function initializeBold() {
 	        "path" : "video/",
 	        "width": 854,
 	        "height": 480,
-	        "filename" : "startup",
-	        "types" : ["mp4", "ogg"]
+	        "filename" : "picked-demo",
+	        "types" : ["mp4"]
 	    });
 	});
 	} else {
